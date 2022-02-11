@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    background-color: #282828;
+}
+.bg-top {
+    background-color: gray;
+    height: 100px;
+}
+.main-div {
+    background-color: #eee;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    position: relative;
+    top: -30px;
+    border-radius: 10px;
+    border-top: 6px solid deeppink;
+    padding: 20px;
+}
+.header {
+    font-size: 30px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+
+}
