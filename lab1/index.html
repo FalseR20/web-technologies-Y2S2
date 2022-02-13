@@ -1,31 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <link href="styles.css" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <div class="bg-top"> </div>
-    <div class="main-div">
-        <div class="header">
+    <header> </header>
+    <div id="main-div">
+        <header>
             Заказ пиццы
-        </div>
+        </header>
         <form method="POST">
-            <div class="field">
+            <div class="field def">
                 <label> Выберите пиццу </label>
                 <br>
-                <select name="pizza" required >
+                <select name="pizza" required>
                     <option> Пепперони</option>
                     <option> Сырная</option>
                     <option> 4 сезона</option>
                     <option> С салом (новинка!)</option>
                 </select>
             </div>
-            <div class="field">
+            <div class="field def">
                 <label> Выберите размер </label>
                 <br>
-                <select name="pizza" required >
+                <select name="pizza" required>
                     <option> 25см (потеря денег)</option>
                     <option> 30см (на одного норм)</option>
                     <option> 35см (уже можно наесться)</option>
@@ -34,32 +36,34 @@
                     <option> 50см (нет пути домой)</option>
                 </select>
             </div>
-            <div class="field">
-                <label> С сырным бортиком </label>
+            <div class="field radio">
+                <label> Бортик </label>
                 <br>
-                <input name="pizza" id="cheesebort0" type="radio" value="with-bort" required>
-                <label for="cheesebort0"> Да </label>
-                <input name="pizza" id="cheesebort1" type="radio" value="without-bort" checked>
-                <label for="cheesebort1"> Нет </label>
+                <input name="pizza" id="cheesebort0" type="radio" value="with-bort" required checked>
+                <label class="radio-label" for="cheesebort0"> Стандартный </label>
+                <br>
+                <input name="pizza" id="cheesebort1" type="radio" value="without-bort">
+                <label class="radio-label" for="cheesebort1"> Сырный </label>
             </div>
-            <div class="field">
+            <div class="field def">
                 <label> Введите ваше имя </label>
                 <br>
                 <input name="name" type="text" required>
             </div>
-            <div class="field">
+            <div class="field def">
                 <label> Введите номер телефона </label>
                 <br>
                 <input name="name" type="tel" required>
             </div>
-            <div class="field">
-                <label> Введите время доставки </label>
+            <div class="field def">
+                <label> Введите дату и время доставки </label>
                 <br>
                 <input name="name" type="datetime-local" required>
             </div>
-            
-            <input type="submit" value="Отправить">
+
+            <input class="button" type="submit" value="Отправить">
         </form>
     </div>
 </body>
+
 </html>
