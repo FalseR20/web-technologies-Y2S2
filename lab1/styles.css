@@ -90,3 +90,8 @@ body>header {
     color: var(--bg-main-div-color);
     cursor: pointer;
 }
+
+footer {
+    color: var(--bg-header-color);
+    text-align: center;
+}
