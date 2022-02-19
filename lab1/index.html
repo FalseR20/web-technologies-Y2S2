@@ -8,76 +8,81 @@
 </head>
 
 <body>
-    <header> </header>
-    <div id="main-div">
-        <h1>
-            Заказ пиццы
-        </h1>
+    <header></header>
+    <div id="main">
+        <h1> Заказ пиццы </h1>
         <form method="POST">
-            <div class="field def">
-                <label> Выберите пиццу </label>
+            <div class="field">
+                <label class="field-label"> Выберите пиццу </label>
                 <br>
-                <select name="pizza_type" required>
-                    <option> Пепперони</option>
-                    <option> Сырная</option>
-                    <option> 4 сезона</option>
-                    <option> С салом (новинка!)</option>
+                <select class="input-field" name="pizza_type" required>
+                    <option> Пепперони </option>
+                    <option> Сырная </option>
+                    <option> 4 сезона </option>
+                    <option> С салом (новинка!) </option>
                 </select>
             </div>
-            <div class="field def">
-                <label> Выберите размер </label>
+            <div class="field">
+                <label class="field-label"> Выберите размер </label>
                 <br>
-                <select name="pizza_size" required>
-                    <option> 25см (потеря денег)</option>
-                    <option> 30см (на одного норм)</option>
-                    <option> 35см (уже можно наесться)</option>
-                    <option> 40см (побереги желудок, другалёк)</option>
-                    <option> 45см (ОСТАНОВИСЬ!)</option>
-                    <option> 50см (нет пути домой)</option>
+                <select class="input-field" name="pizza_size" required>
+                    <option> 25 см </option>
+                    <option> 30 см </option>
+                    <option> 35 см </option>
+                    <option> 40 см </option>
                 </select>
             </div>
-            <div class="field radio">
-                <label> Дополнения </label>
+            <div class="field">
+                <label class="field-label"> Дополнения </label>
                 <br>
-                <input type="checkbox" name="cheese-board" id="cheese-board">
-                <label for="cheese-board">Сырный бортик</label>
+                <label class="selector-label">
+                    <input type="checkbox" class="selector" name="cheese-board">
+                    Сырный бортик
+                </label>
                 <br>
-                 <input type="checkbox" name="box" id="box">
-                <label for="box">В упаковочной коробке</label>
+                <label class="selector-label">
+                    <input type="checkbox" class="selector" name="box">
+                    Упаковать в коробку
+                </label>
             </div>
-            <div class="field radio">
-                <label> Острота </label>
+            <div class="field">
+                <label class="field-label"> Острота </label>
                 <br>
-                <input type="radio" name="hotness" id="not_hot" value="not_hot" required checked>
-                <label class="radio-label" for="not_hot"> Неостро </label>
+                <label class="selector-label">
+                    <input type="radio" class="selector" name="hotness" value="not_hot" required checked>
+                    Неострая
+                </label>
                 <br>
-                <input type="radio" name="hotness" id="medium_hot" value="medium_hot">
-                <label class="radio-label" for="medium_hot"> Среднеостро </label>
+                <label class="selector-label">
+                    <input type="radio" class="selector" name="hotness" value="medium_hot">
+                    Среднеострая
+                </label>
                 <br>
-                <input type="radio" name="hotness" id="hot" value="hot">
-                <label class="radio-label" for="hot"> Очень остро </label>
+                <label class="selector-label">
+                    <input type="radio" class="selector" name="hotness" value="hot">
+                    Очень острая
+                </label>
             </div>
-            <div class="field def">
-                <label> Введите ваше имя </label>
+            <div class="field">
+                <label class="field-label"> Введите ваше имя </label>
                 <br>
-                <input type="text" name="name" required>
+                <input type="text" class="input-field" name="name" placeholder="Иван" required>
             </div>
-            <div class="field def">
-                <label> Введите номер телефона </label>
+            <div class="field">
+                <label class="field-label"> Введите номер телефона </label>
                 <br>
-                <input type="tel" name="tel" placeholder="+375(12)345-67-89" required>
+                <input type="tel" class="input-field" name="tel" placeholder="+375(12)345-67-89" required>
             </div>
-            <div class="field def">
-                <label> Введите дату и время доставки </label>
+            <div class="field">
+                <label class="field-label"> Введите дату и время доставки </label>
                 <br>
-                <input type="datetime-local" name="datetime" required>
+                <input type="datetime-local" class="input-field" name="datetime" required>
             </div>
-            <div class="field def">
-                <label> Примечание </label>
+            <div class="field">
+                <label class="field-label"> Примечание </label>
                 <br>
-                <textarea name="note" rows="3"></textarea>
+                <textarea class="input-field" name="note" rows="2"></textarea>
             </div>
-
             <input type="submit" class="button" value="Отправить">
         </form>
     </div>
