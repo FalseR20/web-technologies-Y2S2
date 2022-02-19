@@ -20,19 +20,18 @@ body>header {
 #main-div {
     background-color: var(--bg-main-div-color);
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     position: relative;
     top: -30px;
-    border-radius: 10px;
     border-top: 6px solid var(--theme-color);
+    border-radius: 10px;
     padding: 20px;
 }
 
-#main-div>header {
-    font-size: 32px;
+#main-div>h1 {
     text-align: center;
-    margin-bottom: 15px;
+    margin: 5px 0 15px 0;
+    font-weight: normal;
 }
 
 .field {
@@ -45,7 +44,7 @@ body>header {
     cursor: text;
 }
 
-.field.def>select, .field.def>input {
+.field.def>select, .field.def>input, .field>textarea {
     padding: 7px;
     border: 3px solid var(--theme-color);
     border-radius: 5px;
@@ -62,6 +61,7 @@ body>header {
     height: 20px;
 }
 
+
 .field.radio>input {
     width: 20px;
     height: 20px;
@@ -69,9 +69,21 @@ body>header {
     top: 5px;
 }
 
+/* .field.radio>input:checked {
+    border-color: var(--theme-color);
+    border: 1px solid red;
+    color: red;
+} */
+
 .field.radio>.radio-label {
     font-size: 16px;
     cursor: pointer;
+}
+
+.field>textarea {
+    min-width: 430px;
+    max-width: 430px;
+    min-height: 20px;
 }
 
 .button {

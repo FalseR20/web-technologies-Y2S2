@@ -10,14 +10,14 @@
 <body>
     <header> </header>
     <div id="main-div">
-        <header>
+        <h1>
             Заказ пиццы
-        </header>
+        </h1>
         <form method="POST">
             <div class="field def">
                 <label> Выберите пиццу </label>
                 <br>
-                <select name="pizza" required>
+                <select name="pizza_type" required>
                     <option> Пепперони</option>
                     <option> Сырная</option>
                     <option> 4 сезона</option>
@@ -27,7 +27,7 @@
             <div class="field def">
                 <label> Выберите размер </label>
                 <br>
-                <select name="pizza" required>
+                <select name="pizza_size" required>
                     <option> 25см (потеря денег)</option>
                     <option> 30см (на одного норм)</option>
                     <option> 35см (уже можно наесться)</option>
@@ -37,31 +37,48 @@
                 </select>
             </div>
             <div class="field radio">
-                <label> Бортик </label>
+                <label> Дополнения </label>
                 <br>
-                <input name="pizza" id="cheesebort0" type="radio" value="with-bort" required checked>
-                <label class="radio-label" for="cheesebort0"> Стандартный </label>
+                <input type="checkbox" name="cheese-board" id="cheese-board">
+                <label for="cheese-board">Сырный бортик</label>
                 <br>
-                <input name="pizza" id="cheesebort1" type="radio" value="without-bort">
-                <label class="radio-label" for="cheesebort1"> Сырный </label>
+                 <input type="checkbox" name="box" id="box">
+                <label for="box">В упаковочной коробке</label>
+            </div>
+            <div class="field radio">
+                <label> Острота </label>
+                <br>
+                <input type="radio" name="hotness" id="not_hot" value="not_hot" required checked>
+                <label class="radio-label" for="not_hot"> Неостро </label>
+                <br>
+                <input type="radio" name="hotness" id="medium_hot" value="medium_hot">
+                <label class="radio-label" for="medium_hot"> Среднеостро </label>
+                <br>
+                <input type="radio" name="hotness" id="hot" value="hot">
+                <label class="radio-label" for="hot"> Очень остро </label>
             </div>
             <div class="field def">
                 <label> Введите ваше имя </label>
                 <br>
-                <input name="name" type="text" required>
+                <input type="text" name="name" required>
             </div>
             <div class="field def">
                 <label> Введите номер телефона </label>
                 <br>
-                <input name="name" type="tel" required>
+                <input type="tel" name="tel" placeholder="+375(12)345-67-89" required>
             </div>
             <div class="field def">
                 <label> Введите дату и время доставки </label>
                 <br>
-                <input name="name" type="datetime-local" required>
+                <input type="datetime-local" name="datetime" required>
+            </div>
+            <div class="field def">
+                <label> Примечание </label>
+                <br>
+                <textarea name="note" rows="3"></textarea>
             </div>
 
-            <input class="button" type="submit" value="Отправить">
+            <input type="submit" class="button" value="Отправить">
         </form>
     </div>
     <footer>
