@@ -2,4 +2,4 @@
 
 ## 1. Создание интерфейса веб-приложений
 
-![alt text](materials/form.png "Описание будет тут")
+![alt text](materials/form_v2.png "Lab №1 v2")
