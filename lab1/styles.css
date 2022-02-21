@@ -7,6 +7,10 @@
     font-family: "Verdana", "Trebuchet MS", sans-serif;
 }
 
+:focus {
+    outline: none;
+}
+
 body {
     margin: 0;
     background-color: var(--bg-color);
