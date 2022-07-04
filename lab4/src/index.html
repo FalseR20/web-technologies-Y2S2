@@ -1,0 +1,51 @@
+<div className="field">
+    <label className="field-label"> Дополнения </label>
+    <br/>
+    <label className="selector-label">
+        <input type="checkbox" className="selector" name="cheese-board">
+        Сырный бортик
+    </label>
+    <br/>
+    <label className="selector-label">
+        <input type="checkbox" className="selector" name="box">
+        Упаковать в коробку
+    </label>
+</div>
+<div className="field">
+    <label className="field-label"> Острота </label>
+    <br>
+    <label className="selector-label">
+        <input type="radio" className="selector" name="hotness" value="not_hot" required checked>
+        Неострая
+    </label>
+    <br>
+    <label className="selector-label">
+        <input type="radio" className="selector" name="hotness" value="medium_hot">
+        Среднеострая
+    </label>
+    <br>
+    <label className="selector-label">
+        <input type="radio" className="selector" name="hotness" value="hot">
+        Очень острая
+    </label>
+</div>
+<div className="field">
+    <label className="field-label"> Введите ваше имя </label>
+    <br>
+    <input type="text" className="input-field" name="name" placeholder="Иван" required>
+</div>
+<div className="field">
+    <label className="field-label"> Введите номер телефона </label>
+    <br>
+    <input type="tel" className="input-field" name="tel" placeholder="+375(12)345-67-89" required>
+</div>
+<div className="field">
+    <label className="field-label"> Введите дату и время доставки </label>
+    <br>
+    <input type="datetime-local" className="input-field" name="datetime" required>
+</div>
+<div className="field">
+    <label className="field-label"> Примечание </label>
+    <br>
+    <textarea className="input-field" name="note" rows="2"></textarea>
+</div>
